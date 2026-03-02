@@ -3219,8 +3219,8 @@
   },
 
   {
-    "Name": "func_F227",
     "ID": "2147480103",
+    "Name": "func_F227",
     "ParameterCount": "3",
     "Variables": [
       {
@@ -3237,6 +3237,20 @@
       },
       {
         "Name": "unk3",
+        "Value": "0",
+        "HasEnum": "false",
+        "EnumName": "none"
+      }
+    ]
+  },
+
+  {
+    "Name": "EC_QVC_FREEZE_ALL",
+    "ID": "2147479740",
+    "ParameterCount": "1",
+    "Variables": [
+      {
+        "Name": "unk1",
         "Value": "0",
         "HasEnum": "false",
         "EnumName": "none"

@@ -75,7 +75,7 @@ namespace Faura
                 long startPos = reader.BaseStream.Position;
 
                 uint cmdID = 0;
-                while (cmdID != 0x7FFFF043)
+                while (reader.BaseStream.Position - startPos < commandBlockSize)
                 {
                     cmdID = reader.ReadUInt32();
 
@@ -119,12 +119,7 @@ namespace Faura
                     }
                     else
                     {
-                        Command template = CommandTemplates.FirstOrDefault(x => x.ID == cmdID);
-                        if (ReferenceEquals(template, null))
-                        {
-                            Console.WriteLine($"Warning: Unknown command ID 0x{cmdID:X8} at position 0x{reader.BaseStream.Position:X}. Skipping...");
-                            continue;
-                        }
+                        Command template = CommandTemplates.First(x => x.ID == cmdID);
                         Command cmd = new Command(template);
                         cmd.ReadBinary(reader);
                         mCommandList_1.Add(cmd);
@@ -136,7 +131,7 @@ namespace Faura
                 startPos = reader.BaseStream.Position;
 
                 cmdID = 0;
-                while (cmdID != 0x7FFFF043)
+                while (reader.BaseStream.Position - startPos < commandBlockSize)
                 {
                     cmdID = reader.ReadUInt32();
                     Command cmd = new Command(CommandTemplates.First(x => x.ID == cmdID));
@@ -266,7 +261,7 @@ namespace Faura
                 writer.Write(mMessageList.Count);
 
                 for (int i = 0; i < mMessageList.Count; i++)
-                    mMessageList[i].Write(writer, i);
+                    mMessageList[i].Write(writer);
 
                 // Write command stream 1
                 writer.Write((int)0);

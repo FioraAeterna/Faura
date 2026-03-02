@@ -16,13 +16,23 @@ namespace Faura.Messages
         private int mCharacterIDOrPortrait;
         private int mMessageIndex;
         private PortraitPosition mPortraitPosition;
-        private short mUnknown1;
+        private short mData;
         private int mMessageLength;
         private string mMessageData;
 
         public string Name { get; set; }
 
         public string IsUsed { get; set; }
+        public string MessageIndex
+        {
+            get { return mMessageIndex.ToString(); }
+            set { mMessageIndex = Convert.ToInt32(value); }
+        }
+        public string Data
+        {
+            get { return mData.ToString(); }
+            set { mData = Convert.ToInt16(value); }
+        }
 
         public string TextboxType
         {
@@ -89,7 +99,7 @@ namespace Faura.Messages
             mCharacterIDOrPortrait = reader.ReadInt32();
             mMessageIndex = reader.ReadInt32();
             mPortraitPosition = (PortraitPosition)reader.ReadInt16();
-            mUnknown1 = reader.ReadInt16();
+            mData = reader.ReadInt16();
             mMessageLength = reader.ReadInt32();
 
             byte[] rawMessageData = reader.ReadBytes(mMessageLength);
@@ -98,14 +108,14 @@ namespace Faura.Messages
             MessageDataProcessor.PadMessageReader(reader);
         }
 
-        public void Write(EndianBinaryWriter writer, int index)
+        public void Write(EndianBinaryWriter writer)
         {
             writer.Write((int)mBoxType);
             writer.Write((int)mCharacterName);
             writer.Write(mCharacterIDOrPortrait);
-            writer.Write(index);
+            writer.Write(mMessageIndex);
             writer.Write((short)mPortraitPosition);
-            writer.Write((short)1);
+            writer.Write((short)mData);
 
             byte[] rawMessageData = MessageDataProcessor.EncodeString(Text);
 
