@@ -10,6 +10,7 @@ using Faura.Messages;
 using Faura.Commands;
 using Faura.Enums;
 using System.Text.RegularExpressions;
+using System.Data.SqlTypes;
 
 namespace Faura
 {
@@ -73,9 +74,10 @@ namespace Faura
                 int commandBlockSize = reader.ReadInt32() * 4;
                 long startPos = reader.BaseStream.Position;
 
-                while(reader.BaseStream.Position - startPos < commandBlockSize)
+                uint cmdID = 0;
+                while (cmdID != 0x7FFFF043)
                 {
-                    uint cmdID = reader.ReadUInt32();
+                    cmdID = reader.ReadUInt32();
 
                     if (cmdID == 2147479592)
                     {
@@ -117,7 +119,13 @@ namespace Faura
                     }
                     else
                     {
-                        Command cmd = new Command(CommandTemplates.First(x => x.ID == cmdID));
+                        Command template = CommandTemplates.FirstOrDefault(x => x.ID == cmdID);
+                        if (ReferenceEquals(template, null))
+                        {
+                            Console.WriteLine($"Warning: Unknown command ID 0x{cmdID:X8} at position 0x{reader.BaseStream.Position:X}. Skipping...");
+                            continue;
+                        }
+                        Command cmd = new Command(template);
                         cmd.ReadBinary(reader);
                         mCommandList_1.Add(cmd);
                     }
@@ -127,9 +135,10 @@ namespace Faura
                 commandBlockSize = reader.ReadInt32() * 4;
                 startPos = reader.BaseStream.Position;
 
-                while (reader.BaseStream.Position - startPos < commandBlockSize)
+                cmdID = 0;
+                while (cmdID != 0x7FFFF043)
                 {
-                    uint cmdID = reader.ReadUInt32();
+                    cmdID = reader.ReadUInt32();
                     Command cmd = new Command(CommandTemplates.First(x => x.ID == cmdID));
                     cmd.ReadBinary(reader);
                     mCommandList_2.Add(cmd);
@@ -287,6 +296,7 @@ namespace Faura
 
                 writer.Write((int)mChoices.Count);
 
+
                 foreach (string[] strArray in mChoices)
                 {
                     writer.Write((int)strArray.Length);
@@ -386,12 +396,14 @@ namespace Faura
 
                         for (int i = com.Variables[0].Value; i <= com.Variables[1].Value; i++)
                             mMessageList[i].IsUsed = "True";
+                        continue;
                     }
                     if (com.Name == "DisplayTemporaryDialog")
                     {
                         strWriter.Write($"{ com.Name } ");
                         strWriter.Write($"{ mMessageList[com.Variables[0].Value].Name } \n");
                         mMessageList[com.Variables[0].Value].IsUsed = "True";
+                        continue;
                     }
                     else
                         com.WriteString(strWriter, enums);
