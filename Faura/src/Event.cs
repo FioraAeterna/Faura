@@ -119,8 +119,13 @@ namespace Faura
                     }
                     else
                     {
-                        Command template = CommandTemplates.First(x => x.ID == cmdID);
-                        Command cmd = new Command(template);
+                        if (!CommandTemplates.Any(x => x.ID == cmdID))
+                        {
+                            Console.WriteLine($"Warning: Unknown command ID 0x{cmdID:X}.");
+                            Console.WriteLine($"All further disassembly likely invalid.");
+                            continue;
+                        }
+                        Command cmd = new Command(CommandTemplates.First(x => x.ID == cmdID));
                         cmd.ReadBinary(reader);
                         mCommandList_1.Add(cmd);
                     }
