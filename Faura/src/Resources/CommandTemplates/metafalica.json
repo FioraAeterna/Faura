@@ -1,13 +1,13 @@
 [
   {
-    "Name": "func_F001",
+    "Name": "EC_ADX_MOVIE_EXIT",
     "ID": "2147479553",
     "ParameterCount": "0",
     "Variables": []
   },
 
   {
-    "Name": "func_F003",
+    "Name": "EC_ADX_MOVIE_PLAY_NO_TEXFREE",
     "ID": "2147479555",
     "ParameterCount": "2",
     "Variables": [
@@ -27,7 +27,7 @@
   },
 
   {
-    "Name": "func_F009",
+    "Name": "EC_ANM_PRE_READ",
     "ID": "2147479561",
     "ParameterCount": "1",
     "Variables": [
@@ -41,7 +41,7 @@
   },
 
   {
-    "Name": "func_F00C",
+    "Name": "EC_ANMMAN_FREE",
     "ID": "2147479564",
     "ParameterCount": "0",
     "Variables": []
@@ -62,14 +62,14 @@
   },
 
   {
-    "Name": "func_F010",
+    "Name": "EC_BG_STORE",
     "ID": "2147479568",
     "ParameterCount": "0",
     "Variables": []
   },
 
   {
-    "Name": "func_F013",
+    "Name": "EC_BG_QUAKE",
     "ID": "2147479571",
     "ParameterCount": "2",
     "Variables": [
@@ -151,7 +151,7 @@
   },
 
   {
-    "Name": "func_F01C",
+    "Name": "EC_BUC_ANM_FRAME_SET",
     "ID": "2147479580",
     "ParameterCount": "3",
     "Variables": [
@@ -269,7 +269,7 @@
   },
 
   {
-    "Name": "func_F028",
+    "Name": "EC_BUC_Z",
     "ID": "2147479592",
     "ParameterCount": "2",
     "Variables": [
@@ -303,7 +303,7 @@
   },
 
   {
-    "Name": "func_F029",
+    "Name": "EC_BUC_FACE_CHANGE",
     "ID": "2147479593",
     "ParameterCount": "2",
     "Variables": [
@@ -323,7 +323,7 @@
   },
 
   {
-    "Name": "func_F02C",
+    "Name": "EC_BURU2",
     "ID": "2147479596",
     "ParameterCount": "1",
     "Variables": [
@@ -337,7 +337,7 @@
   },
 
   {
-    "Name": "func_F02F",
+    "Name": "EC_COMMAND",
     "ID": "2147479599",
     "ParameterCount": "1",
     "Variables": [
@@ -429,49 +429,49 @@
   },
 
   {
-    "Name": "func_F036",
+    "Name": "EC_CONTRAST_RGB",
     "ID": "2147479606",
     "ParameterCount": "0",
     "Variables": []
   },
 
   {
-    "Name": "func_F037",
+    "Name": "EC_DEBUG_NON_START",
     "ID": "2147479607",
     "ParameterCount": "0",
     "Variables": []
   },
 
   {
-    "Name": "func_F038",
+    "Name": "EC_DEBUG_END",
     "ID": "2147479608",
     "ParameterCount": "0",
     "Variables": []
   },
 
   {
-    "Name": "func_F039",
+    "Name": "EC_DEBUG_NON_END",
     "ID": "2147479609",
     "ParameterCount": "0",
     "Variables": []
   },
 
   {
-    "Name": "func_F03A",
+    "Name": "EC_EFF_CLEAR",
     "ID": "2147479610",
     "ParameterCount": "0",
     "Variables": []
   },
 
   {
-    "Name": "func_F03B",
+    "Name": "EC_EFF_CLEAR2",
     "ID": "2147479611",
     "ParameterCount": "0",
     "Variables": []
   },
 
   {
-    "Name": "func_F03C",
+    "Name": "EC_EFF_DRAW",
     "ID": "2147479612",
     "ParameterCount": "2",
     "Variables": [
@@ -505,7 +505,7 @@
   },
 
   {
-    "Name": "func_F03E",
+    "Name": "EC_EFF_REMOVE",
     "ID": "2147479614",
     "ParameterCount": "2",
     "Variables": [
@@ -545,7 +545,7 @@
   },
 
   {
-    "Name": "func_F040",
+    "Name": "EC_EFF_SET_MV",
     "ID": "2147479616",
     "ParameterCount": "6",
     "Variables": [
@@ -589,7 +589,7 @@
   },
 
   {
-    "Name": "func_F042",
+    "Name": "EC_EFF_SET_MV_EXT",
     "ID": "2147479618",
     "ParameterCount": "1",
     "Variables": [
@@ -610,14 +610,14 @@
   },
 
   {
-    "Name": "func_F045",
+    "Name": "EC_EVENT_CANCEL",
     "ID": "2147479621",
     "ParameterCount": "0",
     "Variables": []
   },
 
   {
-    "Name": "func_F046",
+    "Name": "EC_EVENT_SET",
     "ID": "2147479622",
     "ParameterCount": "2",
     "Variables": [
@@ -637,7 +637,7 @@
   },
 
   {
-    "Name": "func_F047",
+    "Name": "EC_EVENT_FLAG_SET",
     "ID": "2147479623",
     "ParameterCount": "2",
     "Variables": [
@@ -657,7 +657,27 @@
   },
 
   {
-    "Name": "func_F04E",
+    "Name": "EC_EVENT_FLAG_SET",
+    "ID": "2147479624",
+    "ParameterCount": "2",
+    "Variables": [
+      {
+        "Name": "unk1",
+        "Value": "0",
+        "HasEnum": "false",
+        "EnumName": "none"
+      },
+      {
+        "Name": "unk2",
+        "Value": "0",
+        "HasEnum": "false",
+        "EnumName": "none"
+      }
+    ]
+  },
+
+  {
+    "Name": "EC_FORCE_BGM",
     "ID": "2147479630",
     "ParameterCount": "3",
     "Variables": [
@@ -683,14 +703,14 @@
   },
 
   {
-    "Name": "func_F051",
+    "Name": "EC_GET_COND_NO",
     "ID": "2147479633",
     "ParameterCount": "0",
     "Variables": []
   },
 
   {
-    "Name": "func_F059",
+    "Name": "EC_ITEM_ADD",
     "ID": "2147479641",
     "ParameterCount": "2",
     "Variables": [
@@ -710,7 +730,7 @@
   },
 
   {
-    "Name": "func_F05A",
+    "Name": "EC_ITEM_DEL",
     "ID": "2147479642",
     "ParameterCount": "2",
     "Variables": [
@@ -730,7 +750,7 @@
   },
 
   {
-    "Name": "func_F05B",
+    "Name": "EC_KNOW_ITEM",
     "ID": "2147479643",
     "ParameterCount": "2",
     "Variables": [
@@ -785,7 +805,7 @@
   },
 
   {
-    "Name": "func_F062",
+    "Name": "EC_LOG_ENABLED",
     "ID": "2147479650",
     "ParameterCount": "1",
     "Variables": [
@@ -819,7 +839,7 @@
   },
 
   {
-    "Name": "func_F066",
+    "Name": "EC_MESS_AUTOFADE",
     "ID": "2147479654",
     "ParameterCount": "1",
     "Variables": [
@@ -847,7 +867,7 @@
   },
 
   {
-    "Name": "func_F06A",
+    "Name": "EC_MESS_OFF",
     "ID": "2147479658",
     "ParameterCount": "0",
     "Variables": []
@@ -868,7 +888,7 @@
   },
 
   {
-    "Name": "func_F070",
+    "Name": "EC_MESS_POS_DETAIL",
     "ID": "2147479664",
     "ParameterCount": "4",
     "Variables": [
@@ -900,7 +920,7 @@
   },
 
   {
-    "Name": "func_F074",
+    "Name": "EC_MESS_PRE_READ",
     "ID": "2147479668",
     "ParameterCount": "2",
     "Variables": [
@@ -920,7 +940,7 @@
   },
 
   {
-    "Name": "func_F076",
+    "Name": "EC_MOVIE",
     "ID": "2147479670",
     "ParameterCount": "1",
     "Variables": [
@@ -962,14 +982,14 @@
   },
 
   {
-    "Name": "func_F07B",
+    "Name": "EC_PALETTE_END",
     "ID": "2147479675",
     "ParameterCount": "0",
     "Variables": []
   },
 
   {
-    "Name": "func_F07E",
+    "Name": "EC_PALETTE_START",
     "ID": "2147479678",
     "ParameterCount": "1",
     "Variables": [
@@ -983,7 +1003,7 @@
   },
 
   {
-    "Name": "func_F081",
+    "Name": "EC_PARTY_DISARM_ALL",
     "ID": "2147479681",
     "ParameterCount": "1",
     "Variables": [
@@ -1025,7 +1045,7 @@
   },
 
   {
-    "Name": "func_F08F",
+    "Name": "EC_POS1_QVC_SET",
     "ID": "2147479695",
     "ParameterCount": "4",
     "Variables": [
@@ -1097,35 +1117,35 @@
   },
 
   {
-    "Name": "func_F09C",
+    "Name": "EC_QV_INIT2",
     "ID": "2147479708",
     "ParameterCount": "0",
     "Variables": []
   },
 
   {
-    "Name": "func_F09E",
+    "Name": "EC_QV_EXIT2",
     "ID": "2147479710",
     "ParameterCount": "0",
     "Variables": []
   },
 
   {
-    "Name": "func_F09F",
+    "Name": "EC_QV_COMEBACK",
     "ID": "2147479711",
     "ParameterCount": "0",
     "Variables": []
   },
 
   {
-    "Name": "func_F0A0",
+    "Name": "EC_QV_TAKESHELTER",
     "ID": "2147479712",
     "ParameterCount": "0",
     "Variables": []
   },
 
   {
-    "Name": "func_F0A3",
+    "Name": "EC_QV_NEAR_ALPHA_LENGTH",
     "ID": "2147479715",
     "ParameterCount": "2",
     "Variables": [
@@ -1145,7 +1165,7 @@
   },
 
   {
-    "Name": "func_F0A4",
+    "Name": "EC_QV_SET",
     "ID": "2147479716",
     "ParameterCount": "1",
     "Variables": [
@@ -1277,7 +1297,7 @@
   },
 
   {
-    "Name": "func_F0B3",
+    "Name": "EC_QVC_ANIMSET_RFLAG",
     "ID": "2147479731",
     "ParameterCount": "2",
     "Variables": [
@@ -1297,7 +1317,7 @@
   },
 
   {
-    "Name": "func_F0B4",
+    "Name": "EC_QVC_ANIM_SPEED",
     "ID": "2147479732",
     "ParameterCount": "2",
     "Variables": [
@@ -1317,7 +1337,7 @@
   },
 
   {
-    "Name": "func_F0B5",
+    "Name": "EC_QVC_CHG_SD",
     "ID": "2147479733",
     "ParameterCount": "2",
     "Variables": [
@@ -1337,7 +1357,7 @@
   },
 
   {
-    "Name": "func_F0B6",
+    "Name": "EC_QVC_COLLISION_CHECK",
     "ID": "2147479734",
     "ParameterCount": "2",
     "Variables": [
@@ -1357,7 +1377,7 @@
   },
 
   {
-    "Name": "func_F0B9",
+    "Name": "EC_QVC_DIR_SET",
     "ID": "2147479737",
     "ParameterCount": "2",
     "Variables": [
@@ -1377,7 +1397,7 @@
   },
 
   {
-    "Name": "func_F0BA",
+    "Name": "EC_QVC_EFF_BASE",
     "ID": "2147479738",
     "ParameterCount": "2",
     "Variables": [
@@ -1429,7 +1449,7 @@
   },
 
   {
-    "Name": "func_F0BE",
+    "Name": "EC_QVC_POS_ZOOM_OFF",
     "ID": "2147479742",
     "ParameterCount": "2",
     "Variables": [
@@ -1449,7 +1469,7 @@
   },
 
   {
-    "Name": "func_F0BF",
+    "Name": "EC_QVC_PRE_READ",
     "ID": "2147479743",
     "ParameterCount": "1",
     "Variables": [
@@ -1463,7 +1483,7 @@
   },
 
   {
-    "Name": "func_F0C0",
+    "Name": "EC_QVC_QUAKE",
     "ID": "2147479744",
     "ParameterCount": "3",
     "Variables": [
@@ -1489,7 +1509,7 @@
   },
 
   {
-    "Name": "func_F0C1",
+    "Name": "EC_QVC_RESET",
     "ID": "2147479745",
     "ParameterCount": "0",
     "Variables": []
@@ -1570,7 +1590,7 @@
   },
 
   {
-    "Name": "func_F0CA",
+    "Name": "EC_QVC_SET_TGTF",
     "ID": "2147479754",
     "ParameterCount": "3",
     "Variables": [
@@ -1617,7 +1637,7 @@
   },
 
   {
-    "Name": "func_F0CF",
+    "Name": "EC_QVCAM_QUAKE",
     "ID": "2147479759",
     "ParameterCount": "2",
     "Variables": [
@@ -1637,7 +1657,7 @@
   },
 
   {
-    "Name": "func_F0D0",
+    "Name": "EC_QVCAM_REVISE",
     "ID": "2147479760",
     "ParameterCount": "1",
     "Variables": [
@@ -1672,7 +1692,7 @@
   },
 
   {
-    "Name": "func_F0D3",
+    "Name": "EC_QVCAM_SET_TGT",
     "ID": "2147479763",
     "ParameterCount": "1",
     "Variables": [
@@ -1686,7 +1706,7 @@
   },
 
   {
-    "Name": "func_F0D9",
+    "Name": "EC_QVCAM_SET_PTCLENGTH",
     "ID": "2147479769",
     "ParameterCount": "1",
     "Variables": [
@@ -1700,7 +1720,7 @@
   },
 
   {
-    "Name": "func_F0DD",
+    "Name": "EC_QVCAM_SET_ZOOM",
     "ID": "2147479773",
     "ParameterCount": "1",
     "Variables": [
@@ -1714,7 +1734,7 @@
   },
 
   {
-    "Name": "func_F0DE",
+    "Name": "EC_QVCAM_SET_ZOOM_TGT",
     "ID": "2147479774",
     "ParameterCount": "2",
     "Variables": [
@@ -1734,7 +1754,7 @@
   },
 
   {
-    "Name": "func_F0DF",
+    "Name": "EC_QVCAM_SET_ROT",
     "ID": "2147479775",
     "ParameterCount": "1",
     "Variables": [
@@ -1748,7 +1768,7 @@
   },
 
   {
-    "Name": "func_F0E0",
+    "Name": "EC_QVCAM_SET_ROT_TGT",
     "ID": "2147479776",
     "ParameterCount": "2",
     "Variables": [
@@ -1768,7 +1788,7 @@
   },
 
   {
-    "Name": "func_F0E2",
+    "Name": "EC_QVCAM_SNAPCHARA",
     "ID": "2147479778",
     "ParameterCount": "1",
     "Variables": [
@@ -1782,7 +1802,7 @@
   },
 
   {
-    "Name": "func_F0E3",
+    "Name": "EC_QVCAM_POS_ZOOM_OFF",
     "ID": "2147479779",
     "ParameterCount": "1",
     "Variables": [
@@ -1796,7 +1816,7 @@
   },
 
   {
-    "Name": "func_F0E4",
+    "Name": "EC_QVFLAG_SET",
     "ID": "2147479780",
     "ParameterCount": "2",
     "Variables": [
@@ -1816,7 +1836,7 @@
   },
 
   {
-    "Name": "func_F0E9",
+    "Name": "EC_QVG_RESET_MAP",
     "ID": "2147479785",
     "ParameterCount": "2",
     "Variables": [
@@ -1836,7 +1856,7 @@
   },
 
   {
-    "Name": "func_F0EB",
+    "Name": "EC_QVG_UNSET",
     "ID": "2147479787",
     "ParameterCount": "1",
     "Variables": [
@@ -1850,7 +1870,7 @@
   },
 
   {
-    "Name": "func_F0EE",
+    "Name": "EC_QVS_MOVE",
     "ID": "2147479790",
     "ParameterCount": "6",
     "Variables": [
@@ -1908,7 +1928,7 @@
   },
 
   {
-    "Name": "func_F0F2",
+    "Name": "EC_SE_PRE",
     "ID": "2147479794",
     "ParameterCount": "1",
     "Variables": [
@@ -1922,7 +1942,7 @@
   },
 
   {
-    "Name": "func_F0F4",
+    "Name": "EC_SE_VOLUME",
     "ID": "2147479796",
     "ParameterCount": "1",
     "Variables": [
@@ -1936,7 +1956,7 @@
   },
 
   {
-    "Name": "func_F0F5",
+    "Name": "EC_SE_VOLUME_FADE",
     "ID": "2147479797",
     "ParameterCount": "3",
     "Variables": [
@@ -1962,7 +1982,7 @@
   },
 
   {
-    "Name": "func_F0F8",
+    "Name": "EC_SELECT",
     "ID": "2147479800",
     "ParameterCount": "2",
     "Variables": [
@@ -2002,7 +2022,7 @@
   },
 
   {
-    "Name": "func_F0FA",
+    "Name": "EC_SELECT_C_PRM",
     "ID": "2147479802",
     "ParameterCount": "1",
     "Variables": [
@@ -2016,7 +2036,7 @@
   },
 
   {
-    "Name": "func_F0FE",
+    "Name": "EC_SELECT_VAR",
     "ID": "2147479806",
     "ParameterCount": "1",
     "Variables": [
@@ -2030,14 +2050,14 @@
   },
 
   {
-    "Name": "func_F107",
+    "Name": "EC_STATUS_REPAIR",
     "ID": "2147479815",
     "ParameterCount": "0",
     "Variables": []
   },
 
   {
-    "Name": "func_F10A",
+    "Name": "EC_STREAM_FADEOUT",
     "ID": "2147479818",
     "ParameterCount": "1",
     "Variables": [
@@ -2079,21 +2099,21 @@
   },
 
   {
-    "Name": "func_F10E",
+    "Name": "EC_STREAM_REPLAY",
     "ID": "2147479822",
     "ParameterCount": "0",
     "Variables": []
   },
 
   {
-    "Name": "func_F10F",
+    "Name": "EC_STREAM_STOP",
     "ID": "2147479823",
     "ParameterCount": "0",
     "Variables": []
   },
 
   {
-    "Name": "func_F112",
+    "Name": "EC_STREAM_FADE_PORT",
     "ID": "2147479826",
     "ParameterCount": "3",
     "Variables": [
@@ -2119,14 +2139,14 @@
   },
 
   {
-    "Name": "func_F120",
+    "Name": "EC_TEX_FREE",
     "ID": "2147479840",
     "ParameterCount": "0",
     "Variables": []
   },
 
   {
-    "Name": "func_F121",
+    "Name": "EC_TOWN_MOVE",
     "ID": "2147479841",
     "ParameterCount": "1",
     "Variables": [
@@ -2140,7 +2160,7 @@
   },
 
   {
-    "Name": "func_F122",
+    "Name": "EC_TOWN_MOVE2",
     "ID": "2147479842",
     "ParameterCount": "1",
     "Variables": [
@@ -2154,7 +2174,7 @@
   },
 
   {
-    "Name": "func_F126",
+    "Name": "EC_XY_SET",
     "ID": "2147479846",
     "ParameterCount": "3",
     "Variables": [
@@ -2200,7 +2220,7 @@
   },
 
   {
-    "Name": "func_F129",
+    "Name": "EC_GAME_MODE_CHANGE",
     "ID": "2147479849",
     "ParameterCount": "3",
     "Variables": [
@@ -2226,7 +2246,7 @@
   },
 
   {
-    "Name": "func_F12A",
+    "Name": "EC_SPIRITUAL",
     "ID": "2147479850",
     "ParameterCount": "1",
     "Variables": [
@@ -2240,7 +2260,7 @@
   },
 
   {
-    "Name": "func_F12C",
+    "Name": "EC_SPIRITUAL_EXIT",
     "ID": "2147479852",
     "ParameterCount": "1",
     "Variables": [
@@ -2254,7 +2274,7 @@
   },
 
   {
-    "Name": "func_F12E",
+    "Name": "EC_SPIRITUAL_LV_SET",
     "ID": "2147479854",
     "ParameterCount": "2",
     "Variables": [
@@ -2288,7 +2308,7 @@
   },
 
   {
-    "Name": "func_F132",
+    "Name": "EC_SPIRITUAL_PARA",
     "ID": "2147479858",
     "ParameterCount": "0",
     "Variables": []
@@ -2323,14 +2343,14 @@
   },
 
   {
-    "Name": "func_F138",
+    "Name": "EC_DP_GET_RESULT",
     "ID": "2147479864",
     "ParameterCount": "0",
     "Variables": []
   },
 
   {
-    "Name": "func_F139",
+    "Name": "EC_IPD_STATUS",
     "ID": "2147479865",
     "ParameterCount": "2",
     "Variables": [
@@ -2350,7 +2370,7 @@
   },
 
   {
-    "Name": "func_F13A",
+    "Name": "EC_COSTUME_GET",
     "ID": "2147479866",
     "ParameterCount": "1",
     "Variables": [
@@ -2364,7 +2384,7 @@
   },
 
   {
-    "Name": "func_F13B",
+    "Name": "EC_SONG_GET",
     "ID": "2147479867",
     "ParameterCount": "1",
     "Variables": [
@@ -2378,14 +2398,14 @@
   },
 
   {
-    "Name": "func_F13D",
+    "Name": "EC_DUALSTALL_TEST",
     "ID": "2147479869",
     "ParameterCount": "0",
     "Variables": []
   },
 
   {
-    "Name": "func_F13E",
+    "Name": "EC_HERO_TAG_CHANGE",
     "ID": "2147479870",
     "ParameterCount": "1",
     "Variables": [
@@ -2399,7 +2419,7 @@
   },
 
   {
-    "Name": "func_F145",
+    "Name": "EC_MATAIRIKU_POINT_ADD",
     "ID": "2147479877",
     "ParameterCount": "1",
     "Variables": [
@@ -2413,7 +2433,7 @@
   },
 
   {
-    "Name": "func_F146",
+    "Name": "EC_DIVERS_CALL",
     "ID": "2147479878",
     "ParameterCount": "2",
     "Variables": [
@@ -2433,7 +2453,7 @@
   },
 
   {
-    "Name": "func_F147",
+    "Name": "EC_SPIRITUAL_CALL",
     "ID": "2147479879",
     "ParameterCount": "1",
     "Variables": [
@@ -2447,7 +2467,7 @@
   },
 
   {
-    "Name": "func_F148",
+    "Name": "EC_BLURCIRCLE",
     "ID": "2147479880",
     "ParameterCount": "5",
     "Variables": [
@@ -2485,7 +2505,7 @@
   },
 
   {
-    "Name": "func_F14C",
+    "Name": "EC_CHARA_RLATION_RATE_SET",
     "ID": "2147479884",
     "ParameterCount": "3",
     "Variables": [
@@ -2511,28 +2531,28 @@
   },
 
   {
-    "Name": "func_F14D",
+    "Name": "EC_CHARA_RLATION_RATE_SET",
     "ID": "2147479885",
     "ParameterCount": "0",
     "Variables": []
   },
 
   {
-    "Name": "func_F14E",
+    "Name": "ECB_BTLMODE_EXIT",
     "ID": "2147479886",
     "ParameterCount": "0",
     "Variables": []
   },
 
   {
-    "Name": "func_F14F",
+    "Name": "ECB_BTLMODE_EXIT_NO_BGM_STOP",
     "ID": "2147479887",
     "ParameterCount": "0",
     "Variables": []
   },
 
   {
-    "Name": "func_F152",
+    "Name": "ECB_TURN_INIT",
     "ID": "2147479890",
     "ParameterCount": "1",
     "Variables": [
@@ -2546,21 +2566,21 @@
   },
 
   {
-    "Name": "func_F153",
+    "Name": "ECB_FLD_SET",
     "ID": "2147479891",
     "ParameterCount": "0",
     "Variables": []
   },
 
   {
-    "Name": "func_F155",
+    "Name": "ECB_RM_BC_ALL",
     "ID": "2147479893",
     "ParameterCount": "0",
     "Variables": []
   },
 
   {
-    "Name": "func_F157",
+    "Name": "ECB_BC_SET_PTY_AT",
     "ID": "2147479895",
     "ParameterCount": "3",
     "Variables": [
@@ -2612,7 +2632,7 @@
   },
 
   {
-    "Name": "func_F15C",
+    "Name": "ECB_BC_HOME_POS",
     "ID": "2147479900",
     "ParameterCount": "5",
     "Variables": [
@@ -2650,7 +2670,7 @@
   },
 
   {
-    "Name": "func_F15E",
+    "Name": "ECB_BC_ADD_PRM",
     "ID": "2147479902",
     "ParameterCount": "4",
     "Variables": [
@@ -2682,7 +2702,7 @@
   },
 
   {
-    "Name": "func_F162",
+    "Name": "ECB_WAIT_BCS",
     "ID": "2147479906",
     "ParameterCount": "2",
     "Variables": [
@@ -2702,7 +2722,7 @@
   },
 
   {
-    "Name": "func_F164",
+    "Name": "ECB_SET_SCHE_PARTS",
     "ID": "2147479908",
     "ParameterCount": "5",
     "Variables": [
@@ -2828,14 +2848,14 @@
   },
 
   {
-    "Name": "func_F1E4",
+    "Name": "ECB_CAM_WAIT_MOVE",
     "ID": "2147480036",
     "ParameterCount": "0",
     "Variables": []
   },
 
   {
-    "Name": "func_F1E5",
+    "Name": "ECB_CAM_WAIT_MOVE",
     "ID": "2147480037",
     "ParameterCount": "6",
     "Variables": [
@@ -2879,7 +2899,7 @@
   },
 
   {
-    "Name": "func_F1E7",
+    "Name": "ECB_CAM_MOVE_AT",
     "ID": "2147480039",
     "ParameterCount": "6",
     "Variables": [
@@ -2923,7 +2943,7 @@
   },
 
   {
-    "Name": "func_F1E9",
+    "Name": "ECB_CAM_MOVE_TYPE",
     "ID": "2147480041",
     "ParameterCount": "4",
     "Variables": [
@@ -2955,7 +2975,7 @@
   },
 
   {
-    "Name": "func_F1EA",
+    "Name": "ECB_CAM_ROT_TYPE",
     "ID": "2147480042",
     "ParameterCount": "4",
     "Variables": [
@@ -2987,7 +3007,7 @@
   },
 
   {
-    "Name": "func_F1F2",
+    "Name": "ECB_BTL_START_EX",
     "ID": "2147480050",
     "ParameterCount": "4",
     "Variables": [
@@ -3019,21 +3039,21 @@
   },
 
   {
-    "Name": "func_F1F5",
+    "Name": "ECB_GET_BTLEND",
     "ID": "2147480053",
     "ParameterCount": "0",
     "Variables": []
   },
 
   {
-    "Name": "func_F1F6",
+    "Name": "ECB_GAME_OVER",
     "ID": "2147480054",
     "ParameterCount": "0",
     "Variables": []
   },
 
   {
-    "Name": "func_F204",
+    "Name": "ECB_SET_DISP_EI",
     "ID": "2147480068",
     "ParameterCount": "1",
     "Variables": [
@@ -3047,7 +3067,7 @@
   },
 
   {
-    "Name": "func_F206",
+    "Name": "ECB_SET_DISP_TOTAL_DAMAGE",
     "ID": "2147480070",
     "ParameterCount": "1",
     "Variables": [
@@ -3061,7 +3081,7 @@
   },
 
   {
-    "Name": "func_F209",
+    "Name": "ECB_SET_BOSS_CHARA",
     "ID": "2147480073",
     "ParameterCount": "2",
     "Variables": [
@@ -3081,7 +3101,7 @@
   },
 
   {
-    "Name": "func_F20A",
+    "Name": "ECB_SET_FORCE_EXIT_TURN",
     "ID": "2147480074",
     "ParameterCount": "1",
     "Variables": [
@@ -3095,7 +3115,7 @@
   },
 
   {
-    "Name": "func_F212",
+    "Name": "ECB_SET_MUTEKI",
     "ID": "2147480082",
     "ParameterCount": "3",
     "Variables": [
@@ -3121,7 +3141,7 @@
   },
 
   {
-    "Name": "func_F21C",
+    "Name": "ECB_SET_TURN",
     "ID": "2147480092",
     "ParameterCount": "1",
     "Variables": [
@@ -3135,7 +3155,7 @@
   },
 
   {
-    "Name": "func_F21D",
+    "Name": "ECB_SET_EI_TIME",
     "ID": "2147480093",
     "ParameterCount": "1",
     "Variables": [
@@ -3149,7 +3169,7 @@
   },
 
   {
-    "Name": "func_F21E",
+    "Name": "ECB_SET_EI_MAX_TIME",
     "ID": "2147480094",
     "ParameterCount": "1",
     "Variables": [
@@ -3163,7 +3183,7 @@
   },
 
   {
-    "Name": "func_F21F",
+    "Name": "ECB_SET_UPDATE_LOCK",
     "ID": "2147480095",
     "ParameterCount": "1",
     "Variables": [
@@ -3177,7 +3197,7 @@
   },
 
   {
-    "Name": "func_F220",
+    "Name": "ECB_SET_HARMO_LV",
     "ID": "2147480096",
     "ParameterCount": "1",
     "Variables": [
@@ -3191,7 +3211,7 @@
   },
 
   {
-    "Name": "func_F224",
+    "Name": "ECB_SET_BGM_NO_CHANGE",
     "ID": "2147480100",
     "ParameterCount": "1",
     "Variables": [
@@ -3205,7 +3225,7 @@
   },
 
   {
-    "Name": "func_F225",
+    "Name": "ECB_SET_IPD_NUM",
     "ID": "2147480101",
     "ParameterCount": "1",
     "Variables": [
@@ -3220,7 +3240,7 @@
 
   {
     "ID": "2147480103",
-    "Name": "func_F227",
+    "Name": "ECB_SET_FIX_COS",
     "ParameterCount": "3",
     "Variables": [
       {
@@ -3245,16 +3265,50 @@
   },
 
   {
-    "Name": "EC_QVC_FREEZE_ALL",
-    "ID": "2147479740",
-    "ParameterCount": "1",
+    "Name": "EC_QVCAM_SET_ROT_TGT_MAPREL",
+    "ID": "2147479777",
+    "ParameterCount": "2",
     "Variables": [
       {
         "Name": "unk1",
         "Value": "0",
         "HasEnum": "false",
         "EnumName": "none"
+      },
+      {
+        "Name": "unk2",
+        "Value": "0",
+        "HasEnum": "false",
+        "EnumName": "none"
       }
     ]
-  }
+  },
+
+  {
+    "Name": "EC_MASTER_PARAM_D",
+    "ID": "2147479651",
+    "ParameterCount": "2",
+    "Variables": [
+      {
+        "Name": "unk1",
+        "Value": "0",
+        "HasEnum": "false",
+        "EnumName": "none"
+      },
+      {
+        "Name": "unk2",
+        "Value": "0",
+        "HasEnum": "false",
+        "EnumName": "none"
+      }
+    ]
+  },
+
+  {
+    "Name": "EC_MESS_OFF_OLDEST",
+    "ID": "2147479660",
+    "ParameterCount": "0"
+  },
+
+  {}
 ]
