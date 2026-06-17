@@ -375,7 +375,10 @@ namespace Faura.Messages
         {
             // Pad up to a 4 byte alignment
             // Formula: (x + (n-1)) & ~(n-1)
-            long nextAligned = (reader.BaseStream.Position + (4 - 1)) & ~(4 - 1);
+            //long nextAligned = (reader.BaseStream.Position + (4 - 1)) & ~(4 - 1);
+
+            // note: this is WRONG, but according to xiyan it's needed to match the bugged formula in the game itself.
+            long nextAligned = (reader.BaseStream.Position & ~(4 - 1)) + 4;
 
             long delta = nextAligned - reader.BaseStream.Position;
             //reader.BaseStream.Position = reader.BaseStream.Position;
@@ -393,6 +396,7 @@ namespace Faura.Messages
         {
             // Pad up to a 4 byte alignment
             // Formula: (x + (n-1)) & ~(n-1)
+            // Does this need to be "fixed" like the writer above? so far, we haven't run into that issue, but...
             long nextAligned = (writer.BaseStream.Length + (4 - 1)) & ~(4 - 1);
 
             long delta = nextAligned - writer.BaseStream.Length;
