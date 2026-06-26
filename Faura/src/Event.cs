@@ -91,7 +91,7 @@ namespace Faura
                         }
                         else
                         {
-                            Command cmd = new Command(CommandTemplates.First(x => x.Name == "func_F028"));
+                            Command cmd = new Command(CommandTemplates.First(x => x.Name == "EC_BUC_Z"));
                             cmd.ReadBinary(reader);
                             mCommandList_1.Add(cmd);
                         }
@@ -110,7 +110,7 @@ namespace Faura
                         }
                         else
                         {
-                            Command cmd = new Command(CommandTemplates.First(x => x.Name == "func_F03C"));
+                            Command cmd = new Command(CommandTemplates.First(x => x.Name == "EC_EFF_DRAW"));
                             cmd.ReadBinary(reader);
                             mCommandList_1.Add(cmd);
                         }
@@ -332,7 +332,7 @@ namespace Faura
                 {
                     if (com.Name == "CreatePosition" || com.Name == "BeginBlock")
                         strWriter.WriteLine();
-                    if (com.Name == "SetPlayerChoices" || com.Name == "func_F0F8")
+                    if (com.Name == "SetPlayerChoices" || com.Name == "EC_SELECT")
                     {
                         com.WriteString(strWriter, enums);
                         strWriter.WriteLine();
